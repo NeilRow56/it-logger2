@@ -1,25 +1,25 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Changed hard drive on workstation 005",
+      "message": "Terminal 555 needs attention",
       "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sam Smith"
+      "tech": "John Doe",
+      "date": "2021-01-12T12:11:22.696Z",
+      "id": 1
     },
     {
-      "id": 2,
-      "message": "Workstation 007 not posting",
+      "message": "Hard drive on server needs replacing",
       "attention": true,
-      "date": "03-02-2019",
-      "tech": "John Doe"
+      "tech": "Sam Smith",
+      "date": "2021-01-12T12:11:53.957Z",
+      "id": 2
     },
     {
-      "id": 3,
-      "message": "Changed memory on workstation 050",
-      "attention": false,
-      "date": "03-02-2019",
-      "tech": "Sara Wilson"
+      "message": "Wireless connection on PC 126 needs updating",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2021-01-12T12:12:25.026Z",
+      "id": 3
     }
   ],
   "techs": [

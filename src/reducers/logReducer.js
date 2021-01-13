@@ -3,7 +3,11 @@ import {
     SET_LOADING,
     LOGS_ERROR,
     ADD_LOG,
-    DELETE_LOG
+    DELETE_LOG,
+    UPDATE_LOG,
+    SEARCH_LOGS,
+    SET_CURRENT,
+    CLEAR_CURRENT
 } from "../actions/types";
 
 const initialState = {
@@ -35,6 +39,28 @@ const initialState = {
                 loading: false
 
             }
+
+        case UPDATE_LOG:
+            return {
+                ...state,
+                logs: state.logs.map(log => log.id === action.payload.id ? action.payload : log )
+            };
+        case SEARCH_LOGS:
+            return {
+                ...state,
+                logs: action.payload
+            };
+        case SET_CURRENT: 
+            return {
+                ...state,
+                current: action.payload
+            };
+        case CLEAR_CURRENT: 
+            return {
+                ...state,
+                current: null
+            };
+        
         case SET_LOADING:
             return {
               ...state,
@@ -45,7 +71,7 @@ const initialState = {
             return {
                 ...state,
                 error:action.payload
-            }
+            };
 
         default:
             return state;
